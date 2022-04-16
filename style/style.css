@@ -1,0 +1,51 @@
+:root{
+ --grayish-blue: hsl(220, 15%, 55%);
+
+ --light-gray: hsl(212, 45%, 89%);
+
+ --dark-blue: hsl(218, 44%, 22%)
+}
+
+body{
+    background-color:  var(--grayish-blue);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card{
+    background-color: white;
+    width: 20rem;
+    height: fit-content;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+    padding: 1rem;
+    gap: 1rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.card > p {
+    color: var(--light-gray);
+    font-size: 15px;
+    font-weight: 400;
+} 
+
+.card > span { 
+    color: var(--dark-blue);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.card> img { 
+    border-radius: inherit;
+    width: 100%;
+    
+}
